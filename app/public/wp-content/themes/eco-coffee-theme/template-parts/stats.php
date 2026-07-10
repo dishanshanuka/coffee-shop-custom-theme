@@ -13,17 +13,16 @@
             foreach($stats as $stat): 
             ?>
             <div class="flex flex-col items-center">
-                <!-- අර ලස්සන පාටින් තියෙන නම්බර් එක -->
                 <h2 class="text-5xl font-serif text-[#a68966] mb-4">
                     <?php echo $stat['number']; ?>
                 </h2>
                 
-                <!-- ටයිටල් එක -->
+                
                 <h3 class="text-sm font-bold tracking-widest uppercase mb-2 text-gray-800">
                     <?php echo $stat['title']; ?>
                 </h3>
                 
-                <!-- විස්තරේ -->
+                
                 <p class="text-xs text-gray-500 leading-relaxed max-w-[180px]">
                     <?php echo $stat['desc']; ?>
                 </p>
