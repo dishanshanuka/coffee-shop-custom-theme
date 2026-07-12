@@ -34,7 +34,20 @@
 </section>
 
 <script>
-function addToCart(productName) {
-    alert(productName + " successfully added to your cart!");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    let cartCount = 0;
+    
+    
+    window.addToCart = function(productName) {
+        cartCount++;
+        let cartElement = document.getElementById('cart-count');
+        if (cartElement) {
+            cartElement.innerText = cartCount;
+    
+            cartElement.style.transform = 'scale(1.2)';
+            setTimeout(() => { cartElement.style.transform = 'scale(1)'; }, 200);
+        }
+        alert(productName + " successfully added to your cart!");
+    };
+});
 </script>
